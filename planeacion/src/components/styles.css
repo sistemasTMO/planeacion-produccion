@@ -1,0 +1,123 @@
+/* Estilo general */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3f3f3ffa;
+    color: white;
+}
+
+.custom-input {
+    border: none; /* Sin borde alrededor */
+    border-bottom: 2px solid #ffd800; /* Solo línea inferior */
+    border-radius: 0; /* Sin redondeo en las esquinas */
+    padding: 0.5rem 0; /* Espaciado en la parte superior e inferior */
+    box-shadow: none; /* Sin sombra */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+  }
+  
+  .custom-input:focus {
+    outline: none; /* Sin contorno al enfocar */
+    border-bottom-color: #ffd800; /* Cambia el color de la línea inferior al enfocar */
+  }
+  
+  .form-floating label {
+    position: absolute; /* Posición absoluta para la etiqueta */
+    top: 0.5rem; /* Espacio superior */
+    left: 0.75rem; /* Espacio a la izquierda */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #6c757d; /* Color de la etiqueta */
+    pointer-events: none; /* La etiqueta no debe interceptar eventos */
+    transition: all 0.2s ease-in-out; /* Transición suave */
+  
+  }
+  
+  .custom-input:focus + label,
+  .custom-input:not(:placeholder-shown) + label {
+    top: -0.5rem; /* Subir etiqueta cuando se enfoca o se llena */
+    font-size: 0.75rem; /* Tamaño de fuente más pequeño */
+    color: rgb(255, 216, 0); /* Cambia el color al enfocar */
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .close-btn:hover {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+  }
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    vertical-align: middle;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .modal-centered {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .modal-appear {
+    transform: translate(-50%, -60%);
+  }
+  
+  .modal-content {
+    width: 700px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .regresarPagina{
+    color: rgb(80, 126, 251);
+    width: 40px;
+    height: auto;
+  }
+  .regresarPagina:hover{
+    color: #ffd800;
+    cursor: pointer;
+    height: auto;
+  }
+
+  .clasificacionColor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .estado-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .estado-item label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .tablaPedidos thead{
+    background-color: #ffd900;
+    color: black;
+  }
+  .tablaPedidos td,
+  .tablaPedidos th{
+    border: 3px solid #ffd800;
+  }
+  .tablaPedidos td{
+    color: white;
+  }
