@@ -2,25 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "servidor/**/*.js",
+        "src": "index.js",
         "use": "@vercel/node"
-      },
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        }
       }
     ],
     "routes": [
       {
-        "src": "/sevidor/(.*)",
-        "dest": "/servidor/$1"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "/"
       }
     ]
   }
