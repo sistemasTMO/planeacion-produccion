@@ -8,7 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/planeacion(.*)",
+        "src": "/PLANEACION-PRODUCCION/planeacion/servidor(.*)",
         "dest": "/"
       }
     ]
