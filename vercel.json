@@ -1,7 +1,7 @@
 {
   "rewrites":[
     {
-      "source": "server.json",
+      "source": "index.js",
       "destination":"/"
     }
   ]   
