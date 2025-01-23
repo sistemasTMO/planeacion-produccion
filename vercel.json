@@ -1,8 +1,12 @@
 {
-  "rewrites":[
+  "rewrites": [
     {
-      "source": "App.js",
-      "destination":"/planeacion"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ]   
+  ]
 }
