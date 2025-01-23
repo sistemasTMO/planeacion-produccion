@@ -2,7 +2,7 @@
   "rewrites":[
     {
       "source": "App.js",
-      "destination":"/"
+      "destination":"/planeacion"
     }
   ]   
 }
