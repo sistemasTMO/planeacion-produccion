@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/servidor/(.*)",
-      "destination": "/servidor/$1"
+      "destination": "/servidor"
     },
     {
       "source": "/(.*)",
